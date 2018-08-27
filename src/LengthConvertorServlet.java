@@ -39,16 +39,15 @@ public class LengthConvertorServlet extends HttpServlet {
             cmDouble = Convertor.convertFromMMetersToCm(mmDouble);
 
         } else
-            writer.println("Należy wypełnić tylko jedno pole!");
+            writer.println("<h1>Należy wypełnić tylko jedno pole!</h1>");
 
 
-        if(mDouble!=null && cmDouble!=null && mmDouble!=null){
-            writer.println("Podana wartość w przeliczeniu na: ");
-            writer.println("metry: " + mDouble);
-            writer.println("centymetry: " + cmDouble);
-            writer.println("milimetry: " + mmDouble);
+        if (mDouble != null && cmDouble != null && mmDouble != null) {
+            writer.println("<h1>Podana wartość w przeliczeniu na: </h1>");
+            writer.println("<h2>metry: " + mDouble + "</h2>");
+            writer.println("<h2>centymetry: " + cmDouble + "</h2>");
+            writer.println("<h2>milimetry: " + mmDouble + "</h2>");
         }
-
 
 
     }

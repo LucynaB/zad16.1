@@ -40,13 +40,13 @@ public class WeightConvertorServlet extends HttpServlet {
             gDouble = Convertor.convertFromMgToGrams(mgDouble);
 
         } else
-            writer.println("Należy wypełnić tylko jedno pole!");
+            writer.println("<h1>Należy wypełnić tylko jedno pole!</h1>");
 
         if (kgDouble != null && gDouble != null && mgDouble != null) {
-            writer.println("Podana wartość w przeliczeniu na: ");
-            writer.println("kilogramy: " + kgDouble);
-            writer.println("gramy: " + gDouble);
-            writer.println("miligramy: " + mgDouble);
+            writer.println("<h1>Podana wartość w przeliczeniu na: </h2>");
+            writer.println("<h2>kilogramy: " + kgDouble + "</h2>");
+            writer.println("<h2>gramy: " + gDouble + "</h2>");
+            writer.println("<h2>miligramy: " + mgDouble + "</h2>");
         }
 
     }
